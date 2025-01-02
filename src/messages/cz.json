@@ -2,8 +2,64 @@
   "NavbarLinks": {
     "home": "Domů",
     "projects": "Projekty",
-    "pricing": "O nás",
-    "training": "Školení",
+    "pricing": "Ceník",
+    "training": "Trénink",
     "contact": "Kontakt"
+  },
+  "HeroImage": {
+    "defaultHeading": "Vítejte",
+    "defaultText": "Připravte se na dobrodružství"
+  },
+  "Contact": {
+    "heading": "Kontaktujte nás",
+    "subheading": "Máte otázky? Jsme tu pro vás!",
+    "contactInfo": "Kontaktní informace",
+    "phone": "+420 800 123 456",
+    "email": "kontakt@nebulatrails.cz",
+    "address": "255 Galaxy St., Olomouc, Topolany",
+    "formTitle": "Pošlete nám zprávu",
+    "namePlaceholder": "Vaše jméno",
+    "emailPlaceholder": "Váš email",
+    "messagePlaceholder": "Vaše zpráva",
+    "submitButton": "Odeslat"
+  },
+  "Pricing": {
+    "heading": "Ceník",
+    "subheading": "Vyberte si svůj výlet",
+    "basicPlan": {
+      "title": "Základní",
+      "price": "1 BTC",
+      "features": ["3 Dny", "Výhledy", "Exkluzivní prostory"]
+    },
+    "suitePlan": {
+      "title": "Premium",
+      "price": "2 BTC",
+      "features": ["5 Dní", "Výhledy", "Exkluzivní prostory"]
+    },
+    "inclusivePlan": {
+      "title": "All Inclusive",
+      "price": "3 BTC",
+      "features": ["7 Dní", "Výhledy", "Exkluzivní prostory"]
+    },
+    "bookButton": "Rezervovat"
+  },
+  "Training": {
+    "heading": "Trénink",
+    "subheading": "Naučte se létat",
+    "contact": "Kontakt",
+    "description": "Nebula Trails nabízí trénink astronautů, který vás připraví fyzicky i mentálně na vesmírnou cestu. Naše programy zahrnují přizpůsobené fitness rutiny, simulace vesmírných misí a mentální přípravu."
+  },
+  "Footer": {
+    "address": "255 Galaxy St., Olomouc, Topolany",
+    "phone": "1-800-255-255",
+    "email": "nebulatrails@space.com",
+    "about": "Společnost Nebula Trails nabízí unikátní zážitek: cestování do vesmíru. Díky špičkové technologii a výjimečnému servisu děláme vesmír dostupný pro všechny dobrodruhy.",
+    "socialMedia": "Sledujte nás"
+  },
+  "Video": {
+    "title": "Nebula Trails",
+    "subtitle": "První komerční vesmírné cestování na světě.",
+    "trainingButton": "Trénink",
+    "launchButton": "Start"
   }
 }

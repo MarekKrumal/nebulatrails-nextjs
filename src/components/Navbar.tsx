@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LanguageButton from "./LanguageBtn";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
+  const locale = useLocale();
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -23,34 +24,33 @@ export default function Navbar() {
         {/* big screens */}
         <ul className="hidden md:flex">
           <li className="p-[1rem]">
-            <Link className="text-2xl" href="/">
+            <Link className="text-2xl" href={`/${locale}/`}>
               {t("home")}
             </Link>
           </li>
           <li className="p-[1rem]">
-            <Link className="text-2xl" href="/pricing">
+            <Link className="text-2xl" href={`/${locale}/pricing`}>
               {t("pricing")}
             </Link>
           </li>
           <li className="p-[1rem]">
-            <Link className="text-2xl" href="/training">
+            <Link className="text-2xl" href={`/${locale}/training`}>
               {t("training")}
             </Link>
           </li>
           <li className="p-[1rem]">
-            <Link className="text-2xl" href="/contact">
+            <Link className="text-2xl" href={`/${locale}/contact`}>
               {t("contact")}
             </Link>
           </li>
-          <li>
+          <li className="p-4 pt-5 hidden">
             <ThemeToggle />
           </li>
-          <li>
+          <li className="p-4 pt-2">
             <LanguageButton />
           </li>
         </ul>
 
-        {/* hamburger small screens only */}
         <div className="block md:hidden p-1" onClick={handleClick}>
           {click ? (
             <X className="text-white text-3xl" />
@@ -60,31 +60,29 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Dropdown menu pouze smalal screens */}
       <ul
         className={`${
           click ? "block" : "hidden"
         } absolute top-0 left-0 md:hidden w-full h-full bg-black text-white flex flex-col justify-center items-center z-20`}
       >
         <li className="p-[2rem]">
-          <Link href="/home">{t("home")}</Link>
+          <Link href={`/${locale}/`}>{t("home")}</Link>
         </li>
         <li className="p-[2rem]">
-          <Link href="/pricing">{t("pricing")}</Link>
+          <Link href={`/${locale}/pricing`}>{t("pricing")}</Link>
         </li>
         <li className="p-[2rem]">
-          <Link href="/training">{t("training")}</Link>
+          <Link href={`/${locale}/training`}>{t("training")}</Link>
         </li>
         <li className="p-[2rem]">
-          <Link className="text-3xl" href="/contact">
-            {t("contact")}
-          </Link>
+          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </li>
-        <li>
-          <ThemeToggle />
-        </li>
-        <li>
+
+        <li className="p-[2rem]">
           <LanguageButton />
+        </li>
+        <li className="p-[2rem] hidden">
+          <ThemeToggle />
         </li>
       </ul>
     </div>

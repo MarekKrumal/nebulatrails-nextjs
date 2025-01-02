@@ -2,8 +2,65 @@
   "NavbarLinks": {
     "home": "Home",
     "projects": "Projects",
-    "pricing": "About",
+    "pricing": "Pricing",
     "training": "Training",
     "contact": "Contact"
+  },
+  "HeroImage": {
+    "defaultHeading": "Welcome",
+    "defaultText": "Prepare for adventure"
+  },
+  "Contact": {
+    "heading": "Contact Us",
+    "subheading": "Have questions? We're here to help!",
+    "contactInfo": "Contact Information",
+    "phone": "+1 800 123 456",
+    "email": "contact@nebulatrails.com",
+    "address": "255 Galaxy St., Olomouc, Topolany",
+    "formTitle": "Send Us a Message",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "submitButton": "Send"
+  },
+  "Pricing": {
+    "heading": "Pricing",
+    "subheading": "Choose your trip",
+    "basicPlan": {
+      "title": "Basic",
+      "price": "1 BTC",
+      "features": ["3 Days", "Views", "Private Quarters"]
+    },
+    "suitePlan": {
+      "title": "Suite",
+      "price": "2 BTC",
+      "features": ["5 Days", "Views", "Private Quarters"]
+    },
+    "inclusivePlan": {
+      "title": "Inclusive",
+      "price": "3 BTC",
+      "features": ["7 Days", "Views", "Private Quarters"]
+    },
+    "bookButton": "Book"
+  },
+  "Training": {
+    "heading": "Training",
+    "subheading": "Learn to fly",
+    "contact": "Contact",
+    "description": "Nebula Trails offers astronaut training to prepare you physically and mentally for space travel. Our programs include tailored fitness routines, space mission simulations, and mental conditioning."
+  },
+  "Footer": {
+    "address": "255 Galaxy St., Olomouc, Topolany",
+    "phone": "1-800-255-255",
+    "email": "nebulatrails@space.com",
+    "about": "Nebula Trails offers a unique experience: space travel. With cutting-edge technology and exceptional service, we make space accessible to all adventurers.",
+    "socialMedia": "Follow us"
+  },
+
+  "Video": {
+    "title": "Nebula Trails",
+    "subtitle": "World's first civilian space travel.",
+    "trainingButton": "Training",
+    "launchButton": "Launch"
   }
 }

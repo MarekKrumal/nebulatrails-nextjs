@@ -30,14 +30,15 @@ export default async function RootLayout({
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
+
   const messages = await getMessages();
   return (
-    <html>
+    <html lang={locale}>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <NextIntlClientProvider messages={messages}>
             <Navbar />
-            <main className="mx-auto">{children}</main>
+            <main className="mx-auto ">{children}</main>
             <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>
