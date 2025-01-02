@@ -1,0 +1,9 @@
+{
+  "NavbarLinks": {
+    "home": "Home",
+    "projects": "Projects",
+    "pricing": "About",
+    "training": "Training",
+    "contact": "Contact"
+  }
+}
