@@ -1,3 +1,9 @@
+import Video from "@/components/Video";
+
 export default function Home() {
-  return <div>Nebula Trails Next.js </div>;
+  return (
+    <div>
+      <Video />
+    </div>
+  );
 }
