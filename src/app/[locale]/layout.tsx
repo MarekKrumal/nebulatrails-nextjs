@@ -22,23 +22,25 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
+}: {
   children: React.ReactNode;
   params: { locale: Locale };
-}>) {
-  const { locale } = await params;
-  if (!routing.locales.includes(locale as Locale)) {
+}) {
+  const { locale } = params;
+
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages(locale);
+
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             <Navbar />
-            <main className="mx-auto ">{children}</main>
+            <main className="mx-auto">{children}</main>
             <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>
