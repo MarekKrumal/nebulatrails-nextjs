@@ -28,17 +28,17 @@
     "subheading": "Vyberte si svůj výlet",
     "basicPlan": {
       "title": "Základní",
-      "price": "1 BTC",
+      "price": "1$",
       "features": ["3 Dny", "Výhledy", "Exkluzivní prostory"]
     },
     "suitePlan": {
       "title": "Premium",
-      "price": "2 BTC",
+      "price": "2$",
       "features": ["5 Dní", "Výhledy", "Exkluzivní prostory"]
     },
     "inclusivePlan": {
       "title": "All Inclusive",
-      "price": "3 BTC",
+      "price": "3$",
       "features": ["7 Dní", "Výhledy", "Exkluzivní prostory"]
     },
     "bookButton": "Rezervovat"

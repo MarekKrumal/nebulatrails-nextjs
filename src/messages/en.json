@@ -28,17 +28,17 @@
     "subheading": "Choose your trip",
     "basicPlan": {
       "title": "Basic",
-      "price": "1 BTC",
+      "price": "1$",
       "features": ["3 Days", "Views", "Private Quarters"]
     },
     "suitePlan": {
       "title": "Suite",
-      "price": "2 BTC",
+      "price": "2$",
       "features": ["5 Days", "Views", "Private Quarters"]
     },
     "inclusivePlan": {
       "title": "Inclusive",
-      "price": "3 BTC",
+      "price": "3$",
       "features": ["7 Days", "Views", "Private Quarters"]
     },
     "bookButton": "Book"
