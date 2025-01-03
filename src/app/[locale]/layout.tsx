@@ -1,5 +1,4 @@
-import { Locale, routing } from "@/i18n/routing";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -21,24 +20,26 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params,
+  params: rawParams,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const params = await rawParams;
+  const { locale } = params;
 
-  if (!routing.locales.includes(locale)) {
+  const supportedLocales = ["cz", "en"];
+  if (!supportedLocales.includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages(locale);
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
-          <NextIntlClientProvider locale={locale} messages={messages}>
+          <NextIntlClientProvider messages={messages}>
             <Navbar />
             <main className="mx-auto">{children}</main>
             <Footer />
