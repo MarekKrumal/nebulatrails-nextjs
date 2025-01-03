@@ -1,14 +1,13 @@
-// app/api/payment-intent/route.ts
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: "2024-12-18.acacia", // Use your Stripe API version
+  apiVersion: "2024-12-18.acacia",
 });
 
 export async function POST(request: NextRequest) {
   try {
-    const { amount } = await request.json();
+    const { amount }: { amount: number } = await request.json();
 
     if (!amount || typeof amount !== "number") {
       return NextResponse.json(
@@ -24,10 +23,12 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({ clientSecret: paymentIntent.client_secret });
-  } catch (error: any) {
-    console.error("Error in /api/payment-intent:", error.message);
+  } catch (error) {
+    const errorMessage =
+      error instanceof Error ? error.message : "Unknown error occurred.";
+    console.error("Error in /api/payment-intent:", errorMessage);
     return NextResponse.json(
-      { error: `Internal Server Error: ${error.message}` },
+      { error: `Internal Server Error: ${errorMessage}` },
       { status: 500 }
     );
   }
