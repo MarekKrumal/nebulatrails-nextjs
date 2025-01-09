@@ -6,7 +6,7 @@ interface HeroImageProps {
 const HeroImage: React.FC<HeroImageProps> = ({ heading, text }) => {
   return (
     <div
-      className="relative h-[400px] bg-cover bg-center"
+      className="relative h-[380px] bg-cover bg-center"
       style={{ backgroundImage: "url('/pic2.avif')" }}
     >
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">

@@ -23,20 +23,20 @@ const Cart: React.FC<CartProps> = ({
 }) => {
   const locale = useLocale();
   return (
-    <div className="card bg-black border border-gray-700 p-6 shadow-lg rounded-lg min-h-[600px] w-full sm:w-[350px] transition-transform duration-300 hover:scale-105">
+    <div className="card bg-black border border-gray-700 p-6 shadow-lg rounded-lg min-h-[550px] w-full sm:w-[350px] transition-transform duration-300 hover:scale-105">
       {/* Title */}
-      <h3 className="text-white text-4xl font-extrabold uppercase text-center mb-8">
+      <h3 className="text-white text-4xl font-extrabold uppercase text-center mb-4">
         {title}
       </h3>
 
       {/* Price and Duration */}
-      <div className="text-center text-gray-300 mb-8">
+      <div className="text-center text-gray-300 mb-4">
         <p className="text-3xl font-bold text-white mb-4">{price}</p>
         <p className="text-lg text-gray-400">Duration: {duration}</p>
       </div>
 
       {/* Included Services */}
-      <div className="mb-8 text-center">
+      <div className="mb-5 text-center">
         <h4 className="text-xl font-bold text-white mb-4">
           Included Services:
         </h4>
@@ -54,7 +54,7 @@ const Cart: React.FC<CartProps> = ({
 
       {/* Safety Information */}
       <div className="mb-8 text-center">
-        <h4 className="text-xl font-bold text-white mb-4">Safety:</h4>
+        <h4 className="text-xl font-bold text-white mb-2">Safety:</h4>
         <p className="text-gray-400 text-base">{safetyInfo}</p>
       </div>
 

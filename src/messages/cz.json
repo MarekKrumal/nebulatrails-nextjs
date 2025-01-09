@@ -50,16 +50,17 @@
     "description": "Nebula Trails nabízí trénink astronautů, který vás připraví fyzicky i mentálně na vesmírnou cestu. Naše programy zahrnují přizpůsobené fitness rutiny, simulace vesmírných misí a mentální přípravu."
   },
   "Footer": {
-    "address": "255 Galaxy St., Olomouc, Topolany",
+    "addressLine1": "255 Galaxy St.",
+    "addressLine2": "Olomouc, Topolany",
     "phone": "1-800-255-255",
     "email": "nebulatrails@space.com",
-    "about": "Společnost Nebula Trails nabízí unikátní zážitek: cestování do vesmíru. Díky špičkové technologii a výjimečnému servisu děláme vesmír dostupný pro všechny dobrodruhy.",
-    "socialMedia": "Sledujte nás"
+    "aboutTitle": "O společnosti",
+    "aboutDescription": "Nebula Trails, se sídlem v olomoucké čtvrti Topolany, nabízí jedinečné dobrodružství: cestování do vesmíru. Díky špičkovým technologiím a výjimečnému servisu zpřístupňujeme vesmírné průzkumy milovníkům adrenalinu. Kromě turismu poskytujeme programy pro výcvik astronautů, které účastníky fyzicky i psychicky připravují na výzvy vesmíru."
   },
   "Video": {
     "title": "Nebula Trails",
     "subtitle": "První komerční vesmírné cestování na světě.",
     "trainingButton": "Trénink",
-    "launchButton": "Start"
+    "launchButton": "Start!"
   }
 }

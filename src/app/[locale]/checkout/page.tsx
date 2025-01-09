@@ -29,7 +29,7 @@ export default function Checkout() {
   }
 
   return (
-    <div className="p-4 text-white">
+    <div className="p-10 pt-32 text-center text-white">
       <h1 className="text-3xl font-bold mb-4">
         Checkout for ${amount.toFixed(2)}
       </h1>

@@ -66,12 +66,11 @@ export default function CheckoutPage({ amount }: CheckoutPageProps) {
       return;
     }
 
-    // Confirm the payment
     const { error } = await stripe.confirmPayment({
       elements,
-      clientSecret, // Pass the clientSecret
+      clientSecret,
       confirmParams: {
-        return_url: `${window.location.origin}/success`, // Replace with your success page
+        return_url: `${window.location.origin}/success`,
       },
     });
 
@@ -86,14 +85,17 @@ export default function CheckoutPage({ amount }: CheckoutPageProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-4 flex flex-col space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className="mt-10 flex bg-white border border-gray-700 text-white p-14 rounded-sm flex-col space-y-9 max-w-xl mx-auto"
+    >
       <PaymentElement />
       {errorMessage && <p className="text-red-500">{errorMessage}</p>}
 
       <button
         type="submit"
         disabled={!stripe || loading}
-        className="px-6 py-3 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 disabled:bg-gray-400"
+        className="px-6 py-6 bg-blue-700 text-white font-bold rounded hover:bg-blue-800 disabled:bg-gray-400 text-xl"
       >
         {loading ? "Processing..." : `Pay $${amount}`}
       </button>

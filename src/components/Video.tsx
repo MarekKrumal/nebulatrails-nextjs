@@ -31,7 +31,7 @@ export default function Video() {
             {t("trainingButton")}
           </Link>
           <Link
-            href={`/${locale}/contact`}
+            href={`/${locale}/pricing`}
             className="px-10 py-4 text-lg uppercase bg-white/20 border border-white text-white cursor-pointer hover:bg-white/35"
           >
             {t("launchButton")}

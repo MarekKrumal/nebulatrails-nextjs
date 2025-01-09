@@ -50,13 +50,13 @@
     "description": "Nebula Trails offers astronaut training to prepare you physically and mentally for space travel. Our programs include tailored fitness routines, space mission simulations, and mental conditioning."
   },
   "Footer": {
-    "address": "255 Galaxy St., Olomouc, Topolany",
+    "addressLine1": "255 Galaxy St.",
+    "addressLine2": "Olomouc, Topolany",
     "phone": "1-800-255-255",
     "email": "nebulatrails@space.com",
-    "about": "Nebula Trails offers a unique experience: space travel. With cutting-edge technology and exceptional service, we make space accessible to all adventurers.",
-    "socialMedia": "Follow us"
+    "aboutTitle": "About the company",
+    "aboutDescription": "Nebula Trails, based in Olomouc's Topolany district, offers a once-in-a-lifetime adventure: space travel. Combining cutting-edge technology with exceptional service, we make space exploration accessible for thrill-seekers. Beyond tourism, we provide astronaut training programs, preparing participants physically and mentally for the challenges of space."
   },
-
   "Video": {
     "title": "Nebula Trails",
     "subtitle": "World's first civilian space travel.",
